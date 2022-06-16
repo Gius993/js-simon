@@ -24,9 +24,11 @@ setTimeout(function(){
 		 }
 		 console.log(arrayTrue);
 		 console.log(arrayFalse);
-	}
+		}
+		// metto il risultato con un alert
+	alert(arrayTrue + ' hai indovintato' + arrayTrue.length + ' numeri');
 }
-, 1000);
+, 30000);
 //funzione generazione random numeri
 
 function generatedRandom(bombNumber, minBomb, maxBomb){
