@@ -4,9 +4,29 @@
 
 //costanti
 const mioArray = generatedRandom(5, 1, 10);
-console.log(mioArray);
+alert(mioArray);
 //funzione numeri casuali
-
+setTimeout(function(){
+	//5 prompt
+	// let numeroUtente = [];
+	let arrayTrue = [];
+	let arrayFalse = [];
+	let numeroUtente = [];
+	for(i = 1; i <= 5; i++){
+		 numeroUtente = parseInt(prompt('inserisci numero'));
+		
+		 //ogni numero in un array
+		 //vanno inseriti in array giusto o sbagliato
+		 if(mioArray.includes(numeroUtente)){
+			 arrayTrue.push(numeroUtente);
+		 }else{
+			 arrayFalse.push(numeroUtente);
+		 }
+		 console.log(arrayTrue);
+		 console.log(arrayFalse);
+	}
+}
+, 1000);
 //funzione generazione random numeri
 
 function generatedRandom(bombNumber, minBomb, maxBomb){
